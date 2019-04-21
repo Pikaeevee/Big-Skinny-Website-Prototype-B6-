@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|PT+Serif|Roboto+Slab|Rubik|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400|PT+Serif|Roboto+Slab|Rubik|Source+Sans+Pro');
 *{
     transition: all ease .4s;
 }
 body{
     margin: 0;
     padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .inner{
     position: relative;
@@ -51,21 +55,94 @@ body{
     margin-top: 10px;
     margin-left: 10px;
 }
+.logo-i{
+    filter: invert(100%);
+    height: 70px;
+    margin-top: 65px;
+    margin-left: 10px;
+}
+.main{
+    background: url('css/pattern.jpg') fixed center center;
+    background: #eee;
+    background-repeat: repeat;
+}
 .header{
     width: 100vw;
-    height: 500px;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(back.jpg) fixed center center;
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(back.jpg) fixed center center;
     background-size: cover;
-    background-position-y: -200px;
+    background-position-y: -80px;
 }
 .heading{
     position: absolute;
-    top: 290px;
+    top: 330px;
     left: 50vw;
     transform: translate(-50%,-50%);
     font-family: 'PT Serif';
-    font-size: 3.5em;
+    font-size: 3.3em;
     width: 600px;
-    color: #fff;
+    color: #000;
     text-align: center;
+    letter-spacing: 1px;
+}
+.button{
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    height: 35px;
+    line-height: 35px;
+    width: 110px;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: .25em;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.body-text{
+    position: relative;
+    font-size: 1.3em;
+    color: #666;
+    letter-spacing: .5px;
+}
+.grid{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 1.5em;
+    font-size: 1.6em;
+    font-family: 'PT Serif';
+    color: #fff;
+    background-size: cover;
+    letter-spacing: 1px;
+}
+.arrow{
+    cursor: pointer;
+}
+.arrow:hover{
+    padding-right: 5px;
+}
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1em;
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 1em;
+}
+@media (max-width: 500px)
+{
+    .menu-itms{
+        display: none;
+    }
+    .heading{
+        width: 400px;
+    }
+    .header{
+        background-position-y: 140px;
+    }
 }
