@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|PT+Serif|Roboto+Slab|Rubik|Source+Sans+Pro');
+*{
+    transition: all ease .4s;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.inner{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90px;
+    background: #fff;
+}
+.menu-itms{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.menu-itm{
+    position: relative;
+    height: 90px;
+    width: 130px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 90px;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: .8em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.menu-itm:hover{
+    color: tomato;
+}
+.logo{
+    position: relative;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header{
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(back.jpg) fixed center center;
+    background-size: cover;
+    background-position-y: -200px;
+}
+.heading{
+    position: absolute;
+    top: 290px;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    font-family: 'PT Serif';
+    font-size: 3.5em;
+    width: 600px;
+    color: #fff;
+    text-align: center;
+}
