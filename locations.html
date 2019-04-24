@@ -24,54 +24,40 @@
         </div>
     </div>
 </div>
-<div class="main" style="background: #eee;">
+<div class="main" style="background: rgba(0,0,0,0.02);">
 <div class="row">
-  <div class="col s12 m6" style="padding:1em;">
+  <div class="col s12 m6" style="padding:1.5em;">
+    <h5 style="font-family: 'Open sans', sans-serif; font-weight: 500; text-align: center; margin-top: 100px;">Interested in starting a franchise?</h5>
     <div id="map"></div>
   </div>
 </div>
 </div>
 <script>
-   var center = {lat: 0, lng: 0};
-   var uluru = [{lat: -25.344, lng: 131.036}, {lat:38.8867099, lng: -77.0074869}, {lat: 43.6570321, lng: -79.6010356}, 
-   {lat: -33.4724228, lng: -70.7699159}];
-   function initMap() {
+    var center = {lat: 0, lng: 0};
+    var uluru = [[{lat: -25.344, lng: 131.036}, 'Australia', '<h3> Australia </h3>'], 
+    [{lat:38.8867099, lng: -77.0074869}, 'America', '<h3> USA </h3>'], 
+    [{lat: 43.6570321, lng: -79.6010356}, 'Canada', '<h3> Canada </h3>'], 
+    [{lat: -33.4724228, lng: -70.7699159}, 'Chile', '<h3> Chile </h3>']];
+    function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
     center: center
-   });
-   for (let index = 0; index < uluru.length; index++) {
-    var marker = new google.maps.Marker({
-      position: uluru[index],
-      map: map
     });
-    var infoWindowContent = [
-        ['<div class="info_content">' +
-        '<h3>London Eye</h3>' +
-        '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>Palace of Westminster</h3>' +
-        '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
-        '</div>'],
-        [
-        '<div class="info_content">' +
-        '<h3>Palace of Westminster</h3>' +
-        '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
-        '</div>' 
-        ],
-        [
-        '<div class="info_content">' +
-        '<h3>Palace of Westminster</h3>' +
-        '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
-        '</div>'
-        ]
-    ];
-    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-                infoWindow.setContent(infoWindowContent[i][0]);
-                infoWindow.open(map, marker);
-            }
-    })(marker, i));
+    // Display multiple markers on a map
+    var infoWindow = new google.maps.InfoWindow(), marker, i;
+    for (let index = 0; index < uluru.length; index++) {
+        var marker = new google.maps.Marker({
+        position: uluru[index][0],
+        map: map,
+        title: uluru[index][1]
+        });
+        let j = 0;
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infoWindow.setContent('' + j);
+                    infoWindow.open(map, marker);
+                }
+        })(marker, i));
    }
   }
 </script>
