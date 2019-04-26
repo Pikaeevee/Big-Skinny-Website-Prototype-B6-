@@ -118,6 +118,12 @@ a{
     background-size: cover;
     letter-spacing: 1px;
 }
+
+.content{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
 .arrow{
     cursor: pointer;
 }
@@ -146,3 +152,99 @@ a{
         background-position-y: 140px;
     }
 }
+
+#sale_info{
+ margin-top: 100px;
+ text-align: center;
+ position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered h3{
+  font-size: 60px;
+  font-weight: bold;
+  word-spacing: 30px;
+}
+
+
+
+.nav {
+  text-align: left;
+  width: 234px;
+  list-style: none;
+  padding: 0px;
+  position: relative;
+  -webkit-box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+.nav > li {
+  width:210px;
+  background: #FFFFFF;
+  display: block;
+  font-size: 14px;
+  padding: 15px 5px 15px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.nav > li:hover {
+  background: #E6E6E6;
+  color: #1B75C4;
+}
+
+.nav > li:nth-child(1){
+  border-left: 4px solid #94BDC1;
+}
+
+.nav > li:nth-child(2){
+  border-left: 4px solid #D39894;
+}
+
+.nav > li:nth-child(3){
+  border-left: 4px solid #50648F;
+}
+
+
+.nav > li:nth-child(4){
+  border-left: 4px solid #F6BD6E;
+}
+
+
+
+.arrow {
+  float: right;
+  padding: 0px 10px;
+}
+
+
+
+.nav > li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity .5s ease-in-out;
+       -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+         -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+}
+
+
+#left_nav{
+ float:left;
+ margin-top:50px;
+   margin-left: 60px;
+}
+
+
+
+
