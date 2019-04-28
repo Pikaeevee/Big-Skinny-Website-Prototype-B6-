@@ -15,14 +15,51 @@
 <body>
 <div class="menu">
     <div class="inner">
-        <a href="index.html"><img src="css/logo.jpg" class="logo" alt=""/></a>
-        <div class="menu-itms">
-            <a class="menu-itm" style="color: inherit;">Products</a>
-            <a class="menu-itm" style="color: inherit;" href="locations.html">Locations</a>
-            <a class="menu-itm" style="color: inherit;" href="faq.html">FAQ</a>
-        </div>
+      <a href="index.html"><img src="css/logo.jpg" class="logo" alt=""/></a>
+      <div class="menu-itms">
+        <a class="menu-itm" style="color: inherit;">Products</a>
+        <a class="menu-itm" style="color: inherit;" href="locations.html">Locations</a>
+        <a class="menu-itm" style="color: inherit;" href="faq.html">FAQ</a>
+        <a class="menu-itm modal-trigger" style="color: inherit;" href="#modal1">VIEW CART
+          <i class="material-icons right" 
+          style=" margin-top: 34px;
+          margin-right: 20px;
+          margin-left: 5px; font-size: 20px;">shopping_cart</i></a>
+      </div>
     </div>
-</div>
+  </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5 style="font-family: 'Open sans', sans-serif; text-align: center;">Your Shopping Cart</h5>
+      <hr style="margin: 20px;"/>
+      <div class="row">
+          <div class="col s12 m4">
+              <img src="css/mwallets.jpg" style="width: 100%"/>
+          </div>
+          <div class="col s12 m8">
+              <b>
+                  <h6 style="font-family: 'Open sans', sans-serif;">
+                  Sleek Men's Wallets
+                  </h6>
+              </b>
+              <p style="font-family: 'Open sans', sans-serif;">
+                  Price: $10
+              </p>
+              <select class="browser-default col s6">
+                <option value="" disabled selected>Choose  quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      <a href="cart.html" class="waves-effect waves-green btn-flat">PROCEED</a>
+    </div>
+  </div>
 <div class="main" style="background: rgba(0,0,0,0.02); margin-top: 90px; ">
     <div class="row" style="padding: 1em;">
         <h4 style="text-align: center; margin-top: 20px; font-family: 'Open sans', sans-serif;">

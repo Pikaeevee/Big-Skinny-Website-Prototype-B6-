@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Big Skinny</title>
+    <title>Secure Checkout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
     <script src="scripts/index.js"></script>
@@ -62,50 +62,71 @@
       <a href="cart.html" class="waves-effect waves-green btn-flat">PROCEED</a>
     </div>
   </div>
-  <div class="main">
-    <div class="header">
-      <div class="heading">
-        Slim, smart, well loved carry goods
-        <div class="button">
-          Shop now 
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col m6 offset-m3 s10 offset-s1">
-        <p class="body-text" style="font-family: 'PT Serif';margin-top:80px;margin-bottom:80px; text-align: center; line-height: 1.8em;">
-            Our ultra-slim Wallet designs solve the top 5 wallet problems. 
-            Our Big Skinny wallets are ultra-thin, flat, and small because we use our proprietary ultra-thin 
-            (but sturdy) nylon micro-fiber wallet material.
-        </p>
-      </div>
-    </div>
-    <div class="row" style="padding:0; margin: 0;">
-      <div class="col m6 s12" style="padding:0;">
-        <div class="grid" style="background: url('css/mwallets.jpg') center center;">
-        Men's wallets<br />
-        <small><span class="arrow">Shop now </span>></small>
-        </div>
-      </div>
-      <div class="col m6 s12" style="padding:0;">
-          <div class="grid" style="background: url('css/wwallets.jpg') center center;">
-            Women's wallets<br />
-            <small><span class="arrow">Shop now </span>></small>
-          </div>
-        </div>
-    </div>
-    <div class="row" style="padding:0;">
-        <div class="col m6 s12" style="padding:0;">
-          <div class="grid" style="background: url('css/phonec.jpg') center center;">
-          Phone cases<br />
-          <small><span class="arrow">Shop now </span>></small>
-          </div>
-        </div>
-        <div class="col m6 s12" style="padding:0;">
-            <div class="grid" style="background: url('css/accessories.jpg') center center;">
-              Accessories<br />
-              <small><span class="arrow">Shop now </span>></small>
-            </div>
+  <div class="main" style="margin-top:90px;">
+      <div class="row">
+          <div class="card col s6 offset-s3" style="margin-top: 80px; padding: .5em; margin-bottom: 80px;">
+            <form class="col s12">
+                <div class="row" style="padding: .2em; text-align: center;">
+                    <h4 style="font-family: 'Open sans', sans-serif;">Shipping Address</h4>
+                </div>
+                <div class="row" style="padding: .5em; padding-top: .1em; padding-bottom: .1em;">
+                    <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row" style="padding: .5em; padding-top: .1em; padding-bottom: .1em;">
+                    <div class="input-field col s6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="phone" type="text" class="validate">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+                <div class="row" style="padding: .5em; padding-top: .1em; padding-bottom: .1em;">
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Address line 1</label>
+                    </div>
+                </div>
+                <div class="row" style="padding: .5em; padding-top: .1em; padding-bottom: .1em;">
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Address line 2</label>
+                    </div>
+                </div>
+                <div class="row" style="padding: .5em; padding-top: .1em; padding-bottom: .1em;">
+                    <div class="input-field col s6">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">City</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">State/Region</label>
+                    </div>
+                </div>
+                <div class="row" style="padding: .5em; padding-top: .1em; padding-bottom: .1em;">
+                    <div class="input-field col s6">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">City</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">State/Region</label>
+                    </div>
+                </div>
+                <div class="row" style="padding-left:1em;">
+                    <button class="btn waves-effect waves-light" style="background: #3498db;" type="submit" name="action">Next
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
+                </div>
+            </form>
           </div>
       </div>
   </div>
@@ -135,15 +156,9 @@
       </div>
     </div>
   </div>
-  <script>
-      window.fcWidget.init({
-        token: "c1f9d6b3-979a-426c-981f-5eb7951e79f7",
-        host: "https://wchat.freshchat.com"
-      });
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="scripts/materialize.min.js"></script>
   <script src="https://wchat.freshchat.com/js/widget.js"></script>
   <script src="scripts/index.js"></script>
-</body>
-</html>
+  </body>
+  </html>
